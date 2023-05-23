@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\ProEventos.API\\ProEventos.API.csproj": {}
+    "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\ProEventos.api\\ProEventos.API.csproj": {}
   },
   "projects": {
-    "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\ProEventos.API\\ProEventos.API.csproj": {
+    "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\ProEventos.api\\ProEventos.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\ProEventos.API\\ProEventos.API.csproj",
+        "projectUniqueName": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\ProEventos.api\\ProEventos.API.csproj",
         "projectName": "ProEventos.API",
-        "projectPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\ProEventos.API\\ProEventos.API.csproj",
+        "projectPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\ProEventos.api\\ProEventos.API.csproj",
         "packagesPath": "C:\\Users\\FELIPE\\.nuget\\packages\\",
-        "outputPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\ProEventos.API\\obj\\",
+        "outputPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\ProEventos.api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\FELIPE\\AppData\\Roaming\\NuGet\\NuGet.Config"
