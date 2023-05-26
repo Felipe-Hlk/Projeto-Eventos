@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "AJsnjxrpiALbAwoMPkOGO7Eipddxzftn5y/A4hZGEXeODdgHCu8nhruTK+wu2r7A4e+zZyZjnnytU4mn47iirA==",
+  "dgSpecHash": "3vTZAq6fDH9of0qNjR6Ckl6wp+Pth/DpgMaFPKBHD5e++wxH7WqpXBwMwB983+AImmrvfb3uxcaLYitPlPPmxg==",
   "success": true,
-  "projectFilePath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\ProEventos.api\\ProEventos.API.csproj",
+  "projectFilePath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\proeventos.api\\ProEventos.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\FELIPE\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\FELIPE\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\FELIPE\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
-    "C:\\Users\\FELIPE\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
-    "C:\\Users\\FELIPE\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
-    "C:\\Users\\FELIPE\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+    "C:\\Users\\FELIPE\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\FELIPE\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\FELIPE\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\FELIPE\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
   ],
   "logs": []
 }
