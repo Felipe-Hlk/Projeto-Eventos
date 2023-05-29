@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\proeventos.api\\ProEventos.API.csproj": {}
+    "d:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\Back\\src\\ProEventos.API\\ProEventos.API.csproj": {}
   },
   "projects": {
-    "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\proeventos.api\\ProEventos.API.csproj": {
+    "d:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\Back\\src\\ProEventos.API\\ProEventos.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\proeventos.api\\ProEventos.API.csproj",
+        "projectUniqueName": "d:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\Back\\src\\ProEventos.API\\ProEventos.API.csproj",
         "projectName": "ProEventos.API",
-        "projectPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\proeventos.api\\ProEventos.API.csproj",
+        "projectPath": "d:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\Back\\src\\ProEventos.API\\ProEventos.API.csproj",
         "packagesPath": "C:\\Users\\FELIPE\\.nuget\\packages\\",
-        "outputPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\proeventos.api\\obj\\",
+        "outputPath": "d:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\Back\\src\\ProEventos.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\FELIPE\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,26 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
