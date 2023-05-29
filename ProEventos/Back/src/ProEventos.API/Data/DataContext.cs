@@ -7,7 +7,7 @@ using ProEventos.API.Models; //adicionar ao inserir conteudo q veio da pasta Mod
 
 namespace ProEventos.API.Data
 {
-    public class DataContext : DbContext
+    public class DataContext : DbContext // função q recebe o Evento.cs...
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options){  }
         public DbSet<Evento> Eventos { get; set; } //adicionando o conteudo do Model-Evento.cs    

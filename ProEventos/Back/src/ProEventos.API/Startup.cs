@@ -13,7 +13,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using ProEventos.API.Data;
 using Microsoft.EntityFrameWorkCore;
-//não esquecer de adicionar a referência para ser utilizada
+//não esquecer de adicionar as referências para serem utilizadas
  
 namespace ProEventos.API
 {
@@ -31,9 +31,10 @@ namespace ProEventos.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // função 'service' q recebe o dataContext e estabele uma confugação com o uso do SQlite para apresentar no banco de dados
             services.AddDbContext<DataContext>(
-              context => context.UseSqlite(Configuration.GetConnectionString("Default"))
-            );
+              context => context.UseSqlite(Configuration.GetConnectionString("Default"))//comando para ligar ao arquivo json 'appsettings.Development'tera q ser adionado o"default" com msm nome
+            ); 
             services.AddControllers();
             services.AddSwaggerGen(c => 
             {
