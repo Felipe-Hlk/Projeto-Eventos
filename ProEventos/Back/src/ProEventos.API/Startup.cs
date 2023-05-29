@@ -13,7 +13,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using ProEventos.API.Data;
 using Microsoft.EntityFrameWorkCore;
-
+//não esquecer de adicionar a referência para ser utilizada
  
 namespace ProEventos.API
 {

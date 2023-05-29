@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProEventos.API.Models
 {
-    public class Evento
+    public class Evento // model de nome evento criado como base de modelo e ser posteriormente usado no banco de dados 
     {
         public int EventoId { get; set; } 
 
