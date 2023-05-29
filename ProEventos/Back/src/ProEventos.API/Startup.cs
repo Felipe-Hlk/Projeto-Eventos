@@ -31,9 +31,9 @@ namespace ProEventos.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // função 'service' q recebe o dataContext e estabele uma confugação com o uso do SQlite para apresentar no banco de dados
+            // função 'service' q recebe o dataContext e estabele uma confugação com o uso do SQlite para criar o banco de dados
             services.AddDbContext<DataContext>(
-              context => context.UseSqlite(Configuration.GetConnectionString("Default"))//comando para ligar ao arquivo json 'appsettings.Development'tera q ser adionado o"default" com msm nome
+              context => context.UseSqlite(Configuration.GetConnectionString("Default"))//comando para ligar ao arquivo json 'appsettings.Development'tera q ser adionado o"default" com msm nome e sera usado par nomear o banco de dados
             ); 
             services.AddControllers();
             services.AddSwaggerGen(c => 
