@@ -12,9 +12,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using ProEventos.API.Data;
-using Microsoft.EntityFrameWorkCore;
-//não esquecer de adicionar as referências para serem utilizadas
- 
+using Microsoft.EntityFrameworkCore;
+
 namespace ProEventos.API
 {
     public class Startup
@@ -26,23 +25,18 @@ namespace ProEventos.API
 
         public IConfiguration Configuration { get; }
 
-       
-
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // função 'service' q recebe o dataContext e estabele uma confugação com o uso do SQlite para criar o banco de dados
-            services.AddDbContext<DataContext>(
-              context => context.UseSqlite(Configuration.GetConnectionString("Default"))//comando para ligar ao arquivo json 'appsettings.Development'tera q ser adionado o"default" com msm nome e sera usado par nomear o banco de dados
-            ); 
+            services.AddDbContext<DataContext>(options =>
+                options.UseSqlite(Configuration.GetConnectionString("Default")));
+
             services.AddControllers();
-            services.AddSwaggerGen(c => 
+            services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ProEventos.API", Version = "v1" });
             });
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -53,9 +47,7 @@ namespace ProEventos.API
             }
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
