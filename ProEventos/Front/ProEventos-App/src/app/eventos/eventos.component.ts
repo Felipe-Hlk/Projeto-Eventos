@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,7 +10,7 @@ export class EventosComponent implements OnInit {
 
   public eventos: any; // eventos declarada, que recebera a ligação através da interpolação no html
 
-  constructor() { }
+  constructor(private http: HttpClient) { } // HttpCliente inserido no constructor obs: variável de no 'http' após 'private'
 
   ngOnInit(): void { //ngOnInit executa antes da requisição pro html
     this.geteventos();// devido a funão do ngOninit getEventos precisa ser inserido após ser declarado, caso contrário não aprecerá na aplicação
@@ -27,24 +28,10 @@ export class EventosComponent implements OnInit {
 
   public geteventos(): void {
 
-    this.eventos = [
-      {
-        Tema: 'Angular',
-        Local: 'Campo Grande-MS'
-      },
-      {
-        Tema: 'React',
-        Local: 'Belo Horizonte-MG'
-      },
-      {
-        Tema: '.NET',
-        Local: 'São Paulo-SP'
-      },
-      {
-        Tema: 'Docker',
-        Local: 'Florianópolis-SC'
-      },
-    ];
+    this.http.get( ' https://localhost:5001/api/Eventos ' ).subscribe(
+      response => this.eventos = response,
+      error => console.log (error)
+      );
 
   }
 }
