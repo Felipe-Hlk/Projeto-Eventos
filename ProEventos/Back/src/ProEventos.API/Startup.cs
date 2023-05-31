@@ -31,7 +31,7 @@ namespace ProEventos.API
                 options.UseSqlite(Configuration.GetConnectionString("Default")));
 
             services.AddControllers();
-            services. AddCors();
+            services. AddCors(); //add service Cors - comando para permição da requisição do front
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ProEventos.API", Version = "v1" });
@@ -52,7 +52,7 @@ namespace ProEventos.API
             app.UseAuthorization();
             app.UseCors(x => x.AllowAnyHeader()
                               .AllowAnyMethod()
-                              .AllowAnyOrigin());
+                              .AllowAnyOrigin());//Use Cors permitindo uso de todas as formas de requisição
 
             app.UseEndpoints(endpoints =>
             {
