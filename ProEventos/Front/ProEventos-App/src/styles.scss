@@ -5,3 +5,9 @@
 
 /* Importing Datepicker SCSS file. */
 @import "~ngx-bootstrap/datepicker/bs-datepicker";
+
+@import url(../node_modules/bootstrap/dist/css/bootstrap.min.css);
+
+@import url(../node_modules/ngx-bootstrap/datepicker/bs-datepicker.css);
+
+@import url(../node_modules/@fortawesome/fontawesome-free/css/all.min.css);
