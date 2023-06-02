@@ -18,20 +18,28 @@
       <th>Data</th>
       <th>Qtd Pessoas</th>
       <th>Lote</th>
-      <th>Opções</th>
+
     </tr>
   </thead>
 
-  <thead>
+  <tbody *ngIf="eventos && eventos.length" >
     <tr *ngFor="let evento of eventos">
-      <th></th>
-      <th></th>
-      <th> {{evento.tema}} </th>
-      <th> {{evento.local}}</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <td> {{evento.eventoId}} </td>
+      <td>
+        <img src="../../assets/img/{{evento.imagemUrl}}" [style.width.px]="100">
+      </td>
+      <td> {{evento.tema}} </td>
+      <td> {{evento.local}}</td>
+      <td> {{evento.dataEvento}} </td>
+      <td> {{evento.qtdPessoas}} Pessoas </td>
+      <td> {{evento.lote}} Lote </td>
     </tr>
-  </thead>
+  </tbody>
+
+  <tfoot *ngIf="!eventos.length" >
+    <tr>
+      <td class="text-center" colspan="8">Nenhum Evento Encontrado</td>
+    </tr>
+  </tfoot>
+
 </table>
