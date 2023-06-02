@@ -4,42 +4,47 @@
 <form action="" class="form-inline">
   <div class="form-gropup mb-2">
     <input type="text" class="form-control mr-2" placeholder="buscar" />
-    <button class="btn btn-outline-sucess">Buscar</button>
+    <button class="btn btn-outline-success">Buscar</button>
   </div>
 </form>
 
 <table class="table table-striped">
   <thead class="thead-dark">
     <tr>
+      <th>
+        <button
+          type="button"
+          class="btn btn-outline-light btn-sm"
+          (click)="alterarImagem()"
+        > {{exibirImagem ? 'Ocultar' : 'Exibir'}} </button>
+      </th>
       <th>#</th>
-      <th>Imagem</th>
       <th>Tema</th>
       <th>Local</th>
       <th>Data</th>
       <th>Qtd Pessoas</th>
       <th>Lote</th>
-
     </tr>
   </thead>
 
-  <tbody *ngIf="eventos && eventos.length" >
+  <tbody *ngIf="eventos && eventos.length">
     <tr *ngFor="let evento of eventos">
-      <td> {{evento.eventoId}} </td>
       <td>
-        <img src="../../assets/img/{{evento.imagemUrl}}" [style.width.px]="100">
+        <img [collapse]="!exibirImagem" [isAnimated]="true" src="../../assets/img/{{ evento.imagemUrl }}" [style.width.px]="150"
+        />
       </td>
-      <td> {{evento.tema}} </td>
-      <td> {{evento.local}}</td>
-      <td> {{evento.dataEvento}} </td>
-      <td> {{evento.qtdPessoas}} Pessoas </td>
-      <td> {{evento.lote}} Lote </td>
+      <td>{{ evento.eventoId }}</td>
+      <td>{{ evento.tema }}</td>
+      <td>{{ evento.local }}</td>
+      <td>{{ evento.dataEvento }}</td>
+      <td>{{ evento.qtdPessoas }} Pessoas</td>
+      <td>{{ evento.lote }} Lote</td>
     </tr>
   </tbody>
 
-  <tfoot *ngIf="!eventos.length" >
+  <tfoot *ngIf="!eventos.length">
     <tr>
       <td class="text-center" colspan="8">Nenhum Evento Encontrado</td>
     </tr>
   </tfoot>
-
 </table>

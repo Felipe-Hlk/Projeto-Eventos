@@ -12,6 +12,9 @@ export class EventosComponent implements OnInit {
 
   public eventos: any = []; // eventos declarada, que recebera a ligação através da interpolação no html
 
+  exibirImagem:boolean = true;
+
+
   constructor(private http: HttpClient) { } // HttpCliente inserido no constructor obs: variável de nome 'http' após 'private'
 
   ngOnInit(): void { //ngOnInit executa antes da requisição pro html
@@ -35,4 +38,10 @@ export class EventosComponent implements OnInit {
       );
 
   }
+
+  alterarImagem() {
+    this.exibirImagem = !this.exibirImagem;
+  }
+
+
 }
