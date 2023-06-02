@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http' // <------------
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
 
 import { CollapseModule } from 'ngx-bootstrap/collapse';
+
+
 
 @NgModule({
   declarations: [
@@ -23,7 +26,8 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
     AppRoutingModule,
     HttpClientModule,// importar http cliente para busca do banco de dados pela API
     BrowserAnimationsModule,
-    CollapseModule
+    CollapseModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
