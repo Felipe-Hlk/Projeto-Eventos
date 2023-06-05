@@ -1,0 +1,12 @@
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Persistence\bin\Debug\net5.0\ProEventos.Persistence.deps.json
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Persistence\bin\Debug\net5.0\ProEventos.Persistence.dll
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Persistence\bin\Debug\net5.0\ref\ProEventos.Persistence.dll
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Persistence\bin\Debug\net5.0\ProEventos.Persistence.pdb
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Persistence\obj\Debug\net5.0\ProEventos.Persistence.csproj.AssemblyReference.cache
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Persistence\obj\Debug\net5.0\ProEventos.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Persistence\obj\Debug\net5.0\ProEventos.Persistence.AssemblyInfoInputs.cache
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Persistence\obj\Debug\net5.0\ProEventos.Persistence.AssemblyInfo.cs
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Persistence\obj\Debug\net5.0\ProEventos.Persistence.csproj.CoreCompileInputs.cache
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Persistence\obj\Debug\net5.0\ProEventos.Persistence.dll
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Persistence\obj\Debug\net5.0\ref\ProEventos.Persistence.dll
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Persistence\obj\Debug\net5.0\ProEventos.Persistence.pdb
