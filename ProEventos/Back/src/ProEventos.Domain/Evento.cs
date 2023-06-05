@@ -12,11 +12,11 @@ namespace ProEventos.Domain.Models
         public DateTime? DataEvento { get; set; }
         public string Tema { get; set; }
         public int QtdPessoas { get; set; }
+        public string ImagemUrl { get; set; }
         public string Telefone { get; set; }
         public string Email { get; set; }
-        public string ImagemUrl { get; set; }
-        public IEnumerable<lote> Lote { get; set; }
+        public IEnumerable<lote> Lotes { get; set; }
         public IEnumerable<RedeSocial> RedesSociais { get; set; }
-        public IEnumerable<PalestranteEventos> PalestranteEventos { get; set; }
+        public IEnumerable<PalestranteEventos> PalestrantesEventos { get; set; }
     }
 }
