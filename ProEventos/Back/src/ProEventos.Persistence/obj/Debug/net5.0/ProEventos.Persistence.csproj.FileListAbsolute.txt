@@ -10,3 +10,6 @@ D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\
 D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Persistence\obj\Debug\net5.0\ProEventos.Persistence.dll
 D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Persistence\obj\Debug\net5.0\ref\ProEventos.Persistence.dll
 D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Persistence\obj\Debug\net5.0\ProEventos.Persistence.pdb
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Persistence\bin\Debug\net5.0\ProEventos.Domain.dll
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Persistence\bin\Debug\net5.0\ProEventos.Domain.pdb
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Persistence\obj\Debug\net5.0\ProEventos.Persistence.csproj.CopyComplete

@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "ProEventos.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/ProEventos.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProEventos.Domain.dll": {}
+        }
+      },
+      "ProEventos.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ProEventos.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProEventos.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProEventos.Persistence.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ProEventos.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ProEventos.Domain/ProEventos.Domain.csproj",
+      "msbuildProject": "../ProEventos.Domain/ProEventos.Domain.csproj"
+    },
+    "ProEventos.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../ProEventos.Persistence/ProEventos.Persistence.csproj",
+      "msbuildProject": "../ProEventos.Persistence/ProEventos.Persistence.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "ProEventos.Domain >= 1.0.0",
+      "ProEventos.Persistence >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\FELIPE\\.nuget\\packages\\": {}
@@ -31,7 +69,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\ProEventos.Domain\\ProEventos.Domain.csproj": {
+              "projectPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\ProEventos.Domain\\ProEventos.Domain.csproj"
+            },
+            "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\ProEventos.Persistence\\ProEventos.Persistence.csproj": {
+              "projectPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\ProEventos.Persistence\\ProEventos.Persistence.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -4,4 +4,10 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\proeventos.domain\ProEventos.Domain.csproj" />
+    <ProjectReference Include="..\proeventos.persistence\ProEventos.Persistence.csproj" />
+  </ItemGroup><!-- Domain e Pesistence sendo referenciados nesse Application -->
+
+
 </Project>

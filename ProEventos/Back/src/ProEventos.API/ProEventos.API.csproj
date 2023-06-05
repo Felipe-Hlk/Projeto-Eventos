@@ -20,4 +20,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\proeventos.application\ProEventos.Application.csproj" />
+  </ItemGroup><!-- Application sendo referenciado nessa API -->
+  
+  
+
 </Project>
