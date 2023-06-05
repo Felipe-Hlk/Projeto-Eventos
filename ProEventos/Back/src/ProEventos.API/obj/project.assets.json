@@ -839,6 +839,43 @@
         "runtime": {
           "lib/netstandard1.3/System.Threading.ThreadPool.dll": {}
         }
+      },
+      "ProEventos.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ProEventos.Domain": "1.0.0",
+          "ProEventos.Persistence": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProEventos.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProEventos.Application.dll": {}
+        }
+      },
+      "ProEventos.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/ProEventos.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProEventos.Domain.dll": {}
+        }
+      },
+      "ProEventos.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ProEventos.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProEventos.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProEventos.Persistence.dll": {}
+        }
       }
     }
   },
@@ -3061,6 +3098,21 @@
         "system.threading.threadpool.4.3.0.nupkg.sha512",
         "system.threading.threadpool.nuspec"
       ]
+    },
+    "ProEventos.Application/1.0.0": {
+      "type": "project",
+      "path": "../proeventos.application/ProEventos.Application.csproj",
+      "msbuildProject": "../proeventos.application/ProEventos.Application.csproj"
+    },
+    "ProEventos.Domain/1.0.0": {
+      "type": "project",
+      "path": "../proeventos.domain/ProEventos.Domain.csproj",
+      "msbuildProject": "../proeventos.domain/ProEventos.Domain.csproj"
+    },
+    "ProEventos.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../proeventos.persistence/ProEventos.Persistence.csproj",
+      "msbuildProject": "../proeventos.persistence/ProEventos.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3071,6 +3123,7 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 5.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.0",
       "NuGet.Common >= 5.0.2",
+      "ProEventos.Application >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -3080,11 +3133,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\Back\\src\\ProEventos.API\\ProEventos.API.csproj",
+      "projectUniqueName": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\proeventos.api\\ProEventos.API.csproj",
       "projectName": "ProEventos.API",
-      "projectPath": "d:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\Back\\src\\ProEventos.API\\ProEventos.API.csproj",
+      "projectPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\proeventos.api\\ProEventos.API.csproj",
       "packagesPath": "C:\\Users\\FELIPE\\.nuget\\packages\\",
-      "outputPath": "d:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\Back\\src\\ProEventos.API\\obj\\",
+      "outputPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\proeventos.api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\FELIPE\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -3098,7 +3151,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\proeventos.application\\ProEventos.Application.csproj": {
+              "projectPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\proeventos.application\\ProEventos.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
