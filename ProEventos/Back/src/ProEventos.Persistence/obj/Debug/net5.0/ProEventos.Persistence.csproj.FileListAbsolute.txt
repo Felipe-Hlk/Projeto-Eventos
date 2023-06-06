@@ -13,3 +13,6 @@ D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\
 D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Persistence\bin\Debug\net5.0\ProEventos.Domain.dll
 D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Persistence\bin\Debug\net5.0\ProEventos.Domain.pdb
 D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Persistence\obj\Debug\net5.0\ProEventos.Persistence.csproj.CopyComplete
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Persistence\bin\Debug\net5.0\ProEventos.Persistence.runtimeconfig.json
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Persistence\bin\Debug\net5.0\ProEventos.Persistence.runtimeconfig.dev.json
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Persistence\obj\Debug\net5.0\ProEventos.Persistence.genruntimeconfig.cache

@@ -16,7 +16,7 @@ namespace ProEventos.Persistence
         public DbSet<Evento> Eventos { get; set; }
         public DbSet<Lote> Lotes { get; set; }
         public DbSet<Palestrante> Palestrantes { get; set; }
-        public DbSet<PalestranteEvento> PalestrantesEventos{ get; set; }
+        public DbSet<PalestranteEventos> PalestrantesEventos{ get; set; }
         public DbSet<RedeSocial> RedesSociais { get; set; }
 
         /* abaixo associação feita de mn entre 'Eventos'e 'Palestrantes' pois empre irá
@@ -24,7 +24,7 @@ namespace ProEventos.Persistence
         a classe 'PalestrantesEventos' como a classe de junção entre 'Eventos'e 'Palestrantes' */
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<PalestranteEvento>()
+            modelBuilder.Entity<PalestranteEventos>()
                 .HasKey(PE => new { PE.EventoId, PE.PalestranteId });
         }
     }

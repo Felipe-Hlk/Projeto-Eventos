@@ -15,3 +15,6 @@ D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\
 D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Application\bin\Debug\net5.0\ProEventos.Domain.pdb
 D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Application\bin\Debug\net5.0\ProEventos.Persistence.pdb
 D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Application\obj\Debug\net5.0\ProEventos.Application.csproj.CopyComplete
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Application\bin\Debug\net5.0\ProEventos.Application.runtimeconfig.json
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Application\bin\Debug\net5.0\ProEventos.Application.runtimeconfig.dev.json
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.Application\obj\Debug\net5.0\ProEventos.Application.genruntimeconfig.cache
