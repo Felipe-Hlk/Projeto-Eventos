@@ -844,6 +844,10 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.0",
+          "Microsoft.EntityFrameworkCore.Sqlite": "5.0.0",
+          "Microsoft.EntityFrameworkCore.Sqlite.Core": "5.0.0",
           "ProEventos.Domain": "1.0.0",
           "ProEventos.Persistence": "1.0.0"
         },
@@ -857,6 +861,12 @@
       "ProEventos.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.0",
+          "Microsoft.EntityFrameworkCore.Sqlite": "5.0.0",
+          "Microsoft.EntityFrameworkCore.Sqlite.Core": "5.0.0"
+        },
         "compile": {
           "bin/placeholder/ProEventos.Domain.dll": {}
         },
@@ -868,6 +878,10 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.0",
+          "Microsoft.EntityFrameworkCore.Sqlite": "5.0.0",
+          "Microsoft.EntityFrameworkCore.Sqlite.Core": "5.0.0",
           "ProEventos.Domain": "1.0.0"
         },
         "compile": {
@@ -3120,7 +3134,9 @@
       "Microsoft.EntityFrameworkCore >= 5.0.0",
       "Microsoft.EntityFrameworkCore.Analyzers >= 5.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0",
+      "Microsoft.EntityFrameworkCore.Relational >= 5.0.0",
       "Microsoft.EntityFrameworkCore.Sqlite >= 5.0.0",
+      "Microsoft.EntityFrameworkCore.Sqlite.Core >= 5.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.0",
       "NuGet.Common >= 5.0.2",
       "ProEventos.Application >= 1.0.0",
@@ -3133,11 +3149,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\proeventos.api\\ProEventos.API.csproj",
+      "projectUniqueName": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\ProEventos.API\\ProEventos.API.csproj",
       "projectName": "ProEventos.API",
-      "projectPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\proeventos.api\\ProEventos.API.csproj",
+      "projectPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\ProEventos.API\\ProEventos.API.csproj",
       "packagesPath": "C:\\Users\\FELIPE\\.nuget\\packages\\",
-      "outputPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\proeventos.api\\obj\\",
+      "outputPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\ProEventos.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\FELIPE\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -3182,7 +3198,15 @@
             "target": "Package",
             "version": "[5.0.0, )"
           },
+          "Microsoft.EntityFrameworkCore.Relational": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          },
           "Microsoft.EntityFrameworkCore.Sqlite": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          },
+          "Microsoft.EntityFrameworkCore.Sqlite.Core": {
             "target": "Package",
             "version": "[5.0.0, )"
           },

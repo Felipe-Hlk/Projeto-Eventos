@@ -55,3 +55,9 @@ D:\Felipe\PROGRAMAÇÃO\Repository GItHub\CursoFullStackWeb\ProEventos\back\src\
 D:\Felipe\PROGRAMAÇÃO\Repository GItHub\CursoFullStackWeb\ProEventos\back\src\proeventos.api\obj\Debug\net5.0\ref\ProEventos.API.dll
 D:\Felipe\PROGRAMAÇÃO\Repository GItHub\CursoFullStackWeb\ProEventos\back\src\proeventos.api\obj\Debug\net5.0\ProEventos.API.pdb
 D:\Felipe\PROGRAMAÇÃO\Repository GItHub\CursoFullStackWeb\ProEventos\back\src\proeventos.api\obj\Debug\net5.0\ProEventos.API.genruntimeconfig.cache
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.API\bin\Debug\net5.0\ProEventos.Application.dll
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.API\bin\Debug\net5.0\ProEventos.Domain.dll
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.API\bin\Debug\net5.0\ProEventos.Persistence.dll
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.API\bin\Debug\net5.0\ProEventos.Application.pdb
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.API\bin\Debug\net5.0\ProEventos.Domain.pdb
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.API\bin\Debug\net5.0\ProEventos.Persistence.pdb
