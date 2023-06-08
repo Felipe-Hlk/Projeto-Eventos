@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using ProEventos.Persistence.Contratos;
+using ProEventos.Persistence.Contextos;
 
 namespace ProEventos.Persistence
 {
