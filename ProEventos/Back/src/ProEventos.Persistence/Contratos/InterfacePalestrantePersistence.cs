@@ -11,7 +11,7 @@ namespace ProEventos.Persistence.Contratos
         //PALESTRANTES
         Task<Palestrante[]> GetAllPalestrantesByNomeAsync(string tema, bool includeEventos);
         Task<Palestrante[]> GetAllPalestrantesAsync(bool includeEventos);
-        Task<Palestrante[]> GetPalestrantesByIdAsync(int EventoId, bool includeEventos);
+        Task<Palestrante> GetPalestrantesByIdAsync(int EventoId, bool includeEventos);
 
 
     }

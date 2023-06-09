@@ -13,6 +13,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using ProEventos.Persistence;
 using Microsoft.EntityFrameworkCore;
+using ProEventos.Persistence.Contextos;
 
 namespace ProEventos.API
 {
