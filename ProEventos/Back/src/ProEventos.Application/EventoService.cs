@@ -35,7 +35,7 @@ namespace ProEventos.Application
                 throw new Exception(ex.Message);
             }
         }
-        public async Task <Evento> Updateevento (int eventoId, Evento model)
+        public async Task<Evento> Updateevento(int eventoId, Evento model)
         {
             try
             {
@@ -62,7 +62,7 @@ namespace ProEventos.Application
 
         }
 
-        
+
         public async Task<bool> DeleteEvento(int eventoId)
         {
             try
@@ -79,6 +79,52 @@ namespace ProEventos.Application
 
                 throw new Exception(ex.Message);
             }
+        }
+
+        public async Task<Evento[]> GetAllEventosAsync(bool includePalestrantes = false)
+        {
+            try
+            {
+                var eventos = await _eventoPersitence.GetAllEventosAsync(includePalestrantes);
+                if (eventos = null) return null;
+
+                return eventos;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<Evento[]> GetAllEventosByTemaAsync(string tema, bool includePalestrantes = false)
+        {
+            try
+            {
+                var eventos = await _eventoPersitence.GetAllEventosByTemaAsync(tema, includePalestrantes);
+                if (eventos = null) return null;
+
+                return eventos;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }         
+
+        }
+
+        public async Task<Evento> GetEventosByIdAsync(int eventoId, bool includePalestrantes = false)
+        {
+            try
+            {
+                var eventos = await _eventoPersitence.GetEventosByIdAsync(eventoId, includePalestrantes);
+                if (eventos = null) return null;
+
+                return eventos;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }   
 
         }
     }

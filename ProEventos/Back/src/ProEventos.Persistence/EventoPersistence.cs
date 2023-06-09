@@ -52,7 +52,7 @@ namespace ProEventos.Persistence
             }
 
             query = query.OrderBy(e => e.Id)
-                            .Where(e => e.Tema.ToLower().Contains(Tema.ToLower));
+                            .Where(e => e.Tema.ToLower().Contains(tema.ToLower));
 
             return await query.ToArrayAsync();
 
