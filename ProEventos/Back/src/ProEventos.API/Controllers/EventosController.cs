@@ -92,21 +92,44 @@ namespace ProEventos.API.Controllers
             {
                 
                 return this.StatusCode(StatusCodes.Status500internalServerError,
-                    $"Erro ao Tentar Recuperar eventos. Erro:{ex.Message}");
+                    $"Erro ao Tentar Adicionar eventos. Erro:{ex.Message}");
             }
         }
 
         [HttpPut ("{id}")]
-        public string Put(int id)
+        public async Task<IActionResult> Put (int id, Evento model)
         {
-            return $@"{id}";
+            try
+            {
+                var evento = await _eventosService.UpdateEvento(id, model);
+                if (evento == null) return BadRequest("Erro ao adicionar evento");
+
+                return Ok(evento);
+            }
+            catch (Exception ex)
+            {
+                
+                return this.StatusCode(StatusCodes.Status500internalServerError,
+                    $"Erro ao Tentar Atualizar eventos. Erro:{ex.Message}");
+            }
         }
 
         [httpDelete("{id}")]
 
-        public string Delete(int id)
+        public async Task <IActionResult> Delete (int id)
         {
-            return $@"{id}";
+            try
+            {
+                return await _eventoService.DeleteEvento (id) ? Ok("Deletado"):BadRequest("Evento não deletado");
+            }
+
+
+            catch (Exception ex)
+            {
+                
+                return this.StatusCode(StatusCodes.Status500internalServerError,
+                    $"Erro ao Tentar Recuperar eventos. Erro:{ex.Message}");
+            }
         }
 
 
