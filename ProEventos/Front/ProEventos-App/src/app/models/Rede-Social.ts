@@ -1,4 +1,4 @@
-import { Evento } from "./evento";
+import { Evento } from "./Evento";
 
 export interface RedeSocial {
 
