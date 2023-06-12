@@ -1,5 +1,6 @@
-import { HttpClient } from '@angular/common/http';
+
 import { Component, OnInit } from '@angular/core';
+import { EventoService } from '../services/evento.service';
 
 
 
@@ -42,7 +43,7 @@ export class EventosComponent implements OnInit {
 
 
 
-  constructor(private http: HttpClient) { } // HttpCliente inserido no constructor obs: variável de nome 'http' após 'private'
+  constructor(private eventoService: EventoService) { } // HttpCliente inserido no constructor obs: variável de nome 'http' após 'private'
 
   ngOnInit(): void { //ngOnInit executa antes da requisição pro html
     this.geteventos();// devido a funão do ngOninit getEventos precisa ser inserido após ser declarado, caso contrário não aprecerá na aplicação
@@ -59,7 +60,7 @@ export class EventosComponent implements OnInit {
   */
 
   public geteventos(): void {
-    this.http.get( ' https://localhost:5001/api/Eventos ' ).subscribe(
+    this.eventoService.getEvento().subscribe(
       response => {
         this.eventos = response;
         this.eventosFiltrados = this.eventos;
