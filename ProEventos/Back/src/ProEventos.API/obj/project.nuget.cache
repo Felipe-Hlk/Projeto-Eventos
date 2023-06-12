@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "MVNFtuoj64XLnVlZ21MTO9oafD683emcBpQG51ShgdQKAdt8VGNSOU8xGiC94f0hHcEdEMfcUikaRiuhSAAwJA==",
+  "dgSpecHash": "2EH62eYVdQQzQ5rNibwEUsRhIQz7JqhCHqsKVM5Vh2uESBRiXcT+rY6gKuUpKH+M6YztYqaqWdpOcqPZ7irZZw==",
   "success": true,
-  "projectFilePath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\ProEventos.API\\ProEventos.API.csproj",
+  "projectFilePath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\proeventos.api\\ProEventos.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\FELIPE\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\FELIPE\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.0\\microsoft.aspnetcore.jsonpatch.5.0.0.nupkg.sha512",
+    "C:\\Users\\FELIPE\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.0\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.0.nupkg.sha512",
     "C:\\Users\\FELIPE\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\FELIPE\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.0\\microsoft.data.sqlite.core.5.0.0.nupkg.sha512",
     "C:\\Users\\FELIPE\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\3.1.6\\microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",
@@ -32,6 +34,8 @@
     "C:\\Users\\FELIPE\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\FELIPE\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\FELIPE\\.nuget\\packages\\microsoft.win32.registry\\4.3.0\\microsoft.win32.registry.4.3.0.nupkg.sha512",
+    "C:\\Users\\FELIPE\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\FELIPE\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\FELIPE\\.nuget\\packages\\nuget.common\\5.0.2\\nuget.common.5.0.2.nupkg.sha512",
     "C:\\Users\\FELIPE\\.nuget\\packages\\nuget.frameworks\\5.0.2\\nuget.frameworks.5.0.2.nupkg.sha512",
     "C:\\Users\\FELIPE\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",

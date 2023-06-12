@@ -61,3 +61,7 @@ D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\
 D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.API\bin\Debug\net5.0\ProEventos.Application.pdb
 D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.API\bin\Debug\net5.0\ProEventos.Domain.pdb
 D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\ProEventos.API\bin\Debug\net5.0\ProEventos.Persistence.pdb
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\proeventos.api\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\proeventos.api\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\proeventos.api\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Felipe\PROGRAMAÇÃO\Repository GItHub\cursofullstackweb\proeventos\back\src\proeventos.api\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll

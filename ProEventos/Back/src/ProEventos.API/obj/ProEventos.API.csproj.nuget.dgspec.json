@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\ProEventos.API\\ProEventos.API.csproj": {}
+    "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\proeventos.api\\ProEventos.API.csproj": {}
   },
   "projects": {
-    "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\ProEventos.API\\ProEventos.API.csproj": {
+    "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\proeventos.api\\ProEventos.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\ProEventos.API\\ProEventos.API.csproj",
+        "projectUniqueName": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\proeventos.api\\ProEventos.API.csproj",
         "projectName": "ProEventos.API",
-        "projectPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\ProEventos.API\\ProEventos.API.csproj",
+        "projectPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\proeventos.api\\ProEventos.API.csproj",
         "packagesPath": "C:\\Users\\FELIPE\\.nuget\\packages\\",
-        "outputPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\ProEventos.API\\obj\\",
+        "outputPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\proeventos.api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\FELIPE\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -42,6 +42,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.0, )"

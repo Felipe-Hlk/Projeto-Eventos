@@ -6,15 +6,13 @@ using ProEventos.Domain;
 
 namespace ProEventos.Persistence.Contratos
 {
-    public interface InterfaceGeralPersistence
+    public interface IGeralPersist
     {
-        //GERAL: Itens Gerais para adicioanr, deletar ou atualizar os elemntos q assim for necessário
+        //GERAL
         void Add<T>(T entity) where T : class;
         void Update<T>(T entity) where T : class;
         void Delete<T>(T entity) where T : class;
-        void DeleteRange<T>(T entity) where T : class;
-
+        void DeleteRange<T>(T[] entity) where T : class;
         Task<bool> SaveChangesAsync();
-
     }
 }

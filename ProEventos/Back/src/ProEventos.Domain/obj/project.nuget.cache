@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MU5ahG0SWQ6jbMDHIstzawYtGuF0t9J9gtekxnckZI02JAPPOqXLQyaDkycHtmaRQr7oHw+kEgfv6Cc+nx0vLQ==",
+  "dgSpecHash": "s2XtOi8+IZ7vX2MV/nSPYce0a0tMeL7MPT+xf/5ncpsJ/+Fgoc1kAsAFiNSpMzyWZeTmpAhCFQwA8wU6Ca02JQ==",
   "success": true,
-  "projectFilePath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\ProEventos.Domain\\ProEventos.Domain.csproj",
+  "projectFilePath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\cursofullstackweb\\proeventos\\back\\src\\proeventos.domain\\ProEventos.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\FELIPE\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\FELIPE\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
