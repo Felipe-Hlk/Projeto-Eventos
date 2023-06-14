@@ -1,8 +1,8 @@
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
 import { EventoService } from '../services/evento.service';
 import { Evento } from '../models/Evento';
-
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 
 
 @Component({
@@ -14,37 +14,44 @@ export class EventosComponent implements OnInit {
 
   // isCollapsed = true;
 
+  modalRef: BsModalRef;
+
   public eventos: Evento[] = []; // eventos declarada, que recebera a ligação através da interpolação no html
 
   public eventosFiltrados: Evento[] = [];
 
-  public exibirImagem:boolean = true;
+  public exibirImagem: boolean = true;
   private _filtroLista: string = '';
 
-  public get filtroLista():string {
+  public get filtroLista(): string {
     return this._filtroLista;
   }
 
-  public set filtroLista(value: string){
+  public set filtroLista(value: string) {
     this._filtroLista = value;
     this.eventosFiltrados = this.filtroLista ? this.filtrarEventos(this.filtroLista) : this.eventos;
   }
 
   public filtrarEventos(filtrarPor: string): Evento[] {
-  filtrarPor = filtrarPor.toLowerCase();
-  return this.eventos.filter(
-    (evento: {
-      local: any; tema: string;
-}) => evento.tema.toLocaleLowerCase().indexOf(filtrarPor) !== -1 ||
-    evento.local.toLocaleLowerCase().indexOf(filtrarPor) !== -1
-  )
+    filtrarPor = filtrarPor.toLowerCase();
+    return this.eventos.filter(
+      (evento: {
+        local: any; tema: string;
+      }) => evento.tema.toLocaleLowerCase().indexOf(filtrarPor) !== -1 ||
+        evento.local.toLocaleLowerCase().indexOf(filtrarPor) !== -1
+    )
 
 
- }
+  }
 
 
 
-  constructor(private eventoService: EventoService) { } // HttpCliente inserido no constructor obs: variável de nome 'http' após 'private'
+  constructor(
+    private eventoService: EventoService,// HttpCliente inserido no constructor obs: variável de nome 'http' após 'private'
+    private modalService: BsModalService
+    ) {
+      this.modalRef = new BsModalRef();
+     }
 
   public ngOnInit(): void { //ngOnInit executa antes da requisição pro html
     this.geteventos();// devido a funão do ngOninit getEventos precisa ser inserido após ser declarado, caso contrário não aprecerá na aplicação
@@ -62,12 +69,12 @@ export class EventosComponent implements OnInit {
 
   public geteventos(): void {
     this.eventoService.getEvento().subscribe(
-     (_eventos: Evento[])=> {
+      (_eventos: Evento[]) => {
         this.eventos = _eventos;
         this.eventosFiltrados = this.eventos;
       },
-      error => console.log (error)
-      );
+      error => console.log(error)
+    );
 
   }
 
@@ -75,6 +82,19 @@ export class EventosComponent implements OnInit {
     this.exibirImagem = !this.exibirImagem
   }
 
+  openModal(template: TemplateRef<any>) {
+    this.modalRef = this.modalService.show(template, { class: 'modal-sm' });
+  }
 
+  confirm(): void {
+    this.modalRef.hide();
+  }
+
+  decline(): void {
+    this.modalRef.hide();
+  }
 }
+
+
+
 
