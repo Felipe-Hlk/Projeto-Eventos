@@ -10,7 +10,7 @@ export class EventoService {
 
   constructor(private http: HttpClient) { }
 
-  getEvento(){
+  getEventos(){
     return this.http.get(this.baseURL);
   }
 }
