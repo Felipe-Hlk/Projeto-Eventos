@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AR2jITdKfHs/D9/M183M0UdUCyafCiGZ/GHhHFAn4qOTFryU2niKL6m0ZLJfsVtRi8czOhSroB28gIczht53gQ==",
+  "dgSpecHash": "H9ToeNfGU5L3RkE0cSet9EZTgFxTouBOdcF8djX/Cebs0lejPAIjr67IJsQgH9lFEPUpqrD4BOjp425nFEq+/A==",
   "success": true,
-  "projectFilePath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\proeventos.persistence\\ProEventos.Persistence.csproj",
+  "projectFilePath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\proeventos\\back\\src\\proeventos.persistence\\ProEventos.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\FELIPE\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\FELIPE\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
