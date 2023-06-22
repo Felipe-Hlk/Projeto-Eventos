@@ -1,6 +1,7 @@
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
 import { EventoService } from '../services/evento.service';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 
 
 
@@ -12,6 +13,8 @@ import { EventoService } from '../services/evento.service';
 export class EventosComponent implements OnInit {
 
   // isCollapsed = true;
+
+  modalRef!: BsModalRef;
 
   public eventos: any = []; // eventos declarada, que recebera a ligação através da interpolação no html
 
@@ -43,7 +46,9 @@ export class EventosComponent implements OnInit {
 
 
 
-  constructor(private eventoService: EventoService) { } // HttpCliente inserido no constructor obs: variável de nome 'http' após 'private'
+  constructor( private eventoService: EventoService, // HttpCliente inserido no constructor obs: variável de nome 'http' após 'private'
+  private modalService: BsModalService
+    ) { }
 
   ngOnInit(): void { //ngOnInit executa antes da requisição pro html
     this.geteventos();// devido a funão do ngOninit getEventos precisa ser inserido após ser declarado, caso contrário não aprecerá na aplicação
@@ -72,6 +77,20 @@ export class EventosComponent implements OnInit {
 
   alterarImagem() {
     this.exibirImagem = !this.exibirImagem
+  }
+
+  openModal(template: TemplateRef<any>) {
+    this.modalRef = this.modalService.show(template, {class: 'modal-sm'});
+  }
+
+  confirm(): void {
+
+    this.modalRef?.hide();
+  }
+
+  decline(): void {
+
+    this.modalRef?.hide();
   }
 
 
