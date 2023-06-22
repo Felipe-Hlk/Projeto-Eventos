@@ -1158,43 +1158,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Fabrício\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\FELIPE\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\proeventos.application\\ProEventos.Application.csproj",
+      "projectUniqueName": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\proeventos.application\\ProEventos.Application.csproj",
       "projectName": "ProEventos.Application",
-      "projectPath": "C:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\proeventos.application\\ProEventos.Application.csproj",
-      "packagesPath": "C:\\Users\\Fabrício\\.nuget\\packages\\",
-      "outputPath": "C:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\proeventos.application\\obj\\",
+      "projectPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\proeventos.application\\ProEventos.Application.csproj",
+      "packagesPath": "C:\\Users\\FELIPE\\.nuget\\packages\\",
+      "outputPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\proeventos.application\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Fabrício\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\FELIPE\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\proeventos.domain\\ProEventos.Domain.csproj": {
-              "projectPath": "C:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\proeventos.domain\\ProEventos.Domain.csproj"
+            "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\proeventos.domain\\ProEventos.Domain.csproj": {
+              "projectPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\proeventos.domain\\ProEventos.Domain.csproj"
             },
-            "C:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\proeventos.persistence\\ProEventos.Persistence.csproj": {
-              "projectPath": "C:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\proeventos.persistence\\ProEventos.Persistence.csproj"
+            "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\proeventos.persistence\\ProEventos.Persistence.csproj": {
+              "projectPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\proeventos.persistence\\ProEventos.Persistence.csproj"
             }
           }
         }
