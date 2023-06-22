@@ -11,7 +11,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
 })
 export class EventosComponent implements OnInit {
   filtrarEventos(filtroLista: string): any {
-    throw new Error('Method not implemented.');
+    throw new Error('Methodo não implementado.');
   }
   modalRef!: BsModalRef;
   public eventos: any = []; // Array para armazenar os eventos
@@ -43,7 +43,7 @@ export class EventosComponent implements OnInit {
     setTimeout(() => {
       /** spinner ends after 5 seconds */
       this.spinner.hide(); // Oculta o spinner após 5 segundos
-    }, 5000);
+    }, 2000);
   }
 
   public geteventos(): void {
@@ -52,7 +52,8 @@ export class EventosComponent implements OnInit {
         this.eventos = response; // Preenche o array de eventos com a resposta da requisição
         this.eventosFiltrados = this.eventos; // Define os eventos filtrados como todos os eventos no início
       },
-      error => console.log(error)
+      error => console.log(error),
+
     );
   }
 
