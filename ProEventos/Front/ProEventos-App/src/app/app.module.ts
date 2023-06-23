@@ -27,6 +27,7 @@ import { DateTimeFormatPipe } from './helpers/date-time-format.pipe';
 import { TituloComponent } from './shared/titulo/titulo.component';
 import { ContatosComponent } from './Components/contatos/contatos.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
+import { PerfilComponent } from './Components/perfil/perfil.component';
 
 
 
@@ -41,6 +42,7 @@ import { DashboardComponent } from './Components/dashboard/dashboard.component';
     TituloComponent,
     ContatosComponent,
     DashboardComponent,
+    PerfilComponent,
 
   ],
   imports: [
