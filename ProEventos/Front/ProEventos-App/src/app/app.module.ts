@@ -25,6 +25,8 @@ import { EventoService } from './services/evento.service';
 
 import { DateTimeFormatPipe } from './helpers/date-time-format.pipe';
 import { TituloComponent } from './shared/titulo/titulo.component';
+import { ContatosComponent } from './Components/contatos/contatos.component';
+import { DashboardComponent } from './Components/dashboard/dashboard.component';
 
 
 
@@ -37,6 +39,8 @@ import { TituloComponent } from './shared/titulo/titulo.component';
     NavComponent,
     DateTimeFormatPipe,
     TituloComponent,
+    ContatosComponent,
+    DashboardComponent,
 
   ],
   imports: [
