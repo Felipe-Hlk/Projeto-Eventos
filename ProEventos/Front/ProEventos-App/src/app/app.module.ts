@@ -7,9 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { EventosComponent } from './eventos/eventos.component';
-import { PalestrantesComponent } from './palestrantes/palestrantes.component';
-import { NavComponent } from './nav/nav.component';
+import { EventosComponent } from './Components/eventos/eventos.component';
+import { PalestrantesComponent } from './Components/palestrantes/palestrantes.component';
+import { NavComponent } from './Components/nav/nav.component';
 
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
@@ -28,6 +28,7 @@ import { TituloComponent } from './shared/titulo/titulo.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +36,8 @@ import { TituloComponent } from './shared/titulo/titulo.component';
     PalestrantesComponent,
     NavComponent,
     DateTimeFormatPipe,
-    TituloComponent
+    TituloComponent,
+
   ],
   imports: [
     BrowserModule,
