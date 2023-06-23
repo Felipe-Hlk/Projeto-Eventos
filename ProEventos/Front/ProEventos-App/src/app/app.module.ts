@@ -24,6 +24,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { EventoService } from './services/evento.service';
 
 import { DateTimeFormatPipe } from './helpers/date-time-format.pipe';
+import { TituloComponent } from './shared/titulo/titulo.component';
 
 
 
@@ -33,7 +34,8 @@ import { DateTimeFormatPipe } from './helpers/date-time-format.pipe';
     EventosComponent,
     PalestrantesComponent,
     NavComponent,
-    DateTimeFormatPipe
+    DateTimeFormatPipe,
+    TituloComponent
   ],
   imports: [
     BrowserModule,

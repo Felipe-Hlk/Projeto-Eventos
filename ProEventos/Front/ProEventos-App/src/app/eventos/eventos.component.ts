@@ -10,9 +10,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
   styleUrls: ['./eventos.component.scss']
 })
 export class EventosComponent implements OnInit {
-  filtrarEventos(filtroLista: string): any {
-    throw new Error('Methodo não implementado.');
-  }
+
   modalRef!: BsModalRef;
   public eventos: any = []; // Array para armazenar os eventos
   public eventosFiltrados: any = []; // Array para armazenar os eventos filtrados
@@ -27,6 +25,16 @@ export class EventosComponent implements OnInit {
     this._filtroLista = value;
     this.eventosFiltrados = this.filtroLista ? this.filtrarEventos(this.filtroLista) : this.eventos;
     // Filtra os eventos com base no valor do filtroLista
+  }
+
+  filtrarEventos(filtrarPor: string): any {
+    filtrarPor = filtrarPor.toLocaleLowerCase()
+    return this.eventos.filter(
+      (evento: {
+        local: any; tema: string;
+}) => evento.tema.toLocaleLowerCase().indexOf(filtrarPor) !== -1 ||
+      evento.local.toLocaleLowerCase().indexOf(filtrarPor) !== -1
+    )
   }
 
   constructor(
