@@ -51,7 +51,7 @@ export class EventosComponent implements OnInit {
     setTimeout(() => {
       /** spinner ends after 5 seconds */
       this.spinner.hide(); // Oculta o spinner após 5 segundos
-    }, 2000);
+    }, 1000);
   }
 
   public geteventos(): void {
