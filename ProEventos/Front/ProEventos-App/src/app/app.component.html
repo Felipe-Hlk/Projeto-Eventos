@@ -1,16 +1,16 @@
-
 <app-nav></app-nav>
 
 <div class="container-fluid">
-
-  <app-eventos></app-eventos>
-  <app-contatos></app-contatos>
-  <app-dashboard></app-dashboard>
-  <app-palestrantes></app-palestrantes>
-  <app-perfil></app-perfil>
-  <router-outlet></router-outlet>
+  <div class="shadow p-3 mb-5 bg-white rounded">
+    <app-eventos></app-eventos>
+    <app-contatos></app-contatos>
+    <app-dashboard></app-dashboard>
+    <app-palestrantes></app-palestrantes>
+    <app-perfil></app-perfil>
+    <router-outlet></router-outlet>
+  </div>
 </div>
 
-<ngx-spinner
->  <p style="text-indent:12px; font-size: 20px; color: white;" > Carregando ... </p>
+<ngx-spinner>
+  <p style="text-indent: 12px; font-size: 20px; color: white">Carregando ...</p>
 </ngx-spinner>
