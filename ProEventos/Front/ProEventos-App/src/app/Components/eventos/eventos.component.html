@@ -1,10 +1,8 @@
-<br />
 
-<br />
-<app-titulo [titulo]="'Eventos'"> </app-titulo>
-<br />
+<app-titulo [titulo]="'Eventos'" [iconClass]="'fa fa-calendar-alt'" [subtitulo]="'Desde 2010'"> </app-titulo>
 
-<div class="form-inline">
+
+<div class="">
   <div class="form-gropup mb-2">
     <!-- <label class="mr-2"> Filtro: </label> -->
     <input
@@ -19,10 +17,10 @@
 <!-- <h5>Filtro: {{ filtroLista }}</h5> -->
 
 <table class="table rounded">
-  <thead class="bg-warning ">
+  <thead class="text-warning">
     <tr>
       <th>
-        <button type="button" class="btn btn-outline-dark btn" (click)="alterarImagem()">
+        <button type="button" class="btn btn-outline-warning btn" (click)="alterarImagem()">
 
           <i class="{{!exibirImagem ? 'fa fa-eye' : 'fa fa-eye-slash'}}"></i>
 
