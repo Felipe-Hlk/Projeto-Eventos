@@ -1,16 +1,18 @@
+<div class="d-flex p-3 my-3 bg-dark text-warning rounded shadow-sm">
 
-<div class="d-flex p-5 mt-0 mb-3 bg-dark text-warning rounded shadow-sm">
-  <i class="{{iconClass}}"> </i>
+  <div class="d-flex align-items-center mr-auto">
+    <i class="{{ iconClass }} mr-3 ml-3"> </i>
     <div class="lh-100">
-
-      <!-- <h6 class="mb-0">Bootstrap</h6> -->
-
-      <h2>
-        {{titulo}}
-      </h2>
-
-      <small>{{subtitulo}}</small>
+      <h2 class="mb-0"> {{ titulo }} </h2>
+      <small> {{ subtitulo }} </small>
     </div>
+  </div>
+
+  <div *ngIf="botaolistar">
+    <button class="btn btn-outline-warning p-2">
+      Listar {{ titulo }}
+    </button>
+  </div>
 
 
 </div>
