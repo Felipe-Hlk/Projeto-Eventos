@@ -1,8 +1,10 @@
-import { Component, OnInit, TemplateRef } from '@angular/core';
+import { Component, OnInit, TemplateRef, HostListener } from '@angular/core';
 import { EventoService } from '../../services/evento.service';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { ToastrService } from 'ngx-toastr';
 import { NgxSpinnerService } from 'ngx-spinner';
+
+
 
 @Component({
   selector: 'app-eventos',
@@ -80,5 +82,12 @@ export class EventosComponent implements OnInit {
 
   decline(): void {
     this.modalRef?.hide(); // Fecha o modal
+  }
+
+  isTelaPequena = false;
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event) {
+    this.isTelaPequena = window.innerWidth <= 767.98; // Defina o tamanho máximo para considerar como "tela pequena"
   }
 }

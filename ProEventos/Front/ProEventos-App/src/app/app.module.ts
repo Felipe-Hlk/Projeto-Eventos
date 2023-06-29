@@ -28,6 +28,8 @@ import { TituloComponent } from './shared/titulo/titulo.component';
 import { ContatosComponent } from './Components/contatos/contatos.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { PerfilComponent } from './Components/perfil/perfil.component';
+import { EventoDetalheComponent } from './Components/eventos/evento-detalhe/evento-detalhe.component';
+import { EventoListaComponent } from './components/eventos/evento-lista/evento-lista.component';
 
 
 
@@ -43,6 +45,8 @@ import { PerfilComponent } from './Components/perfil/perfil.component';
     ContatosComponent,
     DashboardComponent,
     PerfilComponent,
+    EventoDetalheComponent,
+    EventoListaComponent,
 
   ],
   imports: [
