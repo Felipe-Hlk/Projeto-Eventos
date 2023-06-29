@@ -1,1 +1,13 @@
-@import '~bootswatch/dist/yeti/bootstrap.min.css';
+@import '~bootswatch/dist/slate/bootstrap.min.css';
+
+.dropdown-link:hover {
+
+  background-color: none;
+  background-color: initial;
+
+}
+
+.navbar
+{
+  font-size: 20px;
+}
