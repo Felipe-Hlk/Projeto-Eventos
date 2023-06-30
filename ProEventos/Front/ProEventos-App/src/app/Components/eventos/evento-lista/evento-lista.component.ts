@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit, TemplateRef } from '@angular/core';
+import { Router } from '@angular/router';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { ToastrService } from 'ngx-toastr';
@@ -10,7 +11,7 @@ import { EventoService } from 'src/app/services/evento.service';
   styleUrls: ['./evento-lista.component.scss']
 })
 export class EventoListaComponent implements OnInit {
-  
+
   modalRef!: BsModalRef;
   public eventos: any = []; // Array para armazenar os eventos
   public eventosFiltrados: any = []; // Array para armazenar os eventos filtrados
@@ -41,7 +42,8 @@ export class EventoListaComponent implements OnInit {
     private eventoService: EventoService, // Serviço para obter os eventos
     private modalService: BsModalService, // Serviço para abrir modais
     private toastr: ToastrService, // Serviço para exibir notificações de sucesso
-    private spinner: NgxSpinnerService // Serviço para exibir e ocultar o spinner
+    private spinner: NgxSpinnerService, // Serviço para exibir e ocultar o spinner
+    private router: Router // Serviço para executar rotas
   ) {}
 
   ngOnInit(): void {
@@ -86,6 +88,11 @@ export class EventoListaComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize(event: Event) {
-    this.isTelaPequena = window.innerWidth <= 767.98; // Defina o tamanho máximo para considerar como "tela pequena"
+    this.isTelaPequena = window.innerWidth <= 767.98; // Definição do tamanho máximo para considerar como "tela pequena" para o botao de excluir evento
   }
+
+  detalheEvento(id: number): void {
+    this.router.navigate([`eventos/detalhe/${id}`]);
+  }
+
 }

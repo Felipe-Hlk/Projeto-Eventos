@@ -10,6 +10,7 @@ import { EventoDetalheComponent } from './Components/eventos/evento-detalhe/even
 import { EventoListaComponent } from './Components/eventos/evento-lista/evento-lista.component';
 
 const routes: Routes = [
+  {path: 'eventos', redirectTo: 'eventos/lista'},
   {
     path: 'eventos', component: EventosComponent,
     children: [
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path: 'contatos', component: ContatosComponent},
   {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
   {path: '**', redirectTo: 'dashboard', pathMatch: 'full'}
+
 ];
 
 @NgModule({
