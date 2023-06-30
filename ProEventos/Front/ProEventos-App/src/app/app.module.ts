@@ -24,7 +24,7 @@ import { DateTimeFormatPipe } from './helpers/date-time-format.pipe';
 import { TituloComponent } from './shared/titulo/titulo.component';
 import { ContatosComponent } from './Components/contatos/contatos.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
-import { PerfilComponent } from './Components/perfil/perfil.component';
+import { PerfilComponent } from './Components/user/perfil/perfil.component';
 import { EventoDetalheComponent } from './Components/eventos/evento-detalhe/evento-detalhe.component';
 import { EventoListaComponent } from './Components/eventos/evento-lista/evento-lista.component';
 import { UserComponent } from './Components/user/user.component';

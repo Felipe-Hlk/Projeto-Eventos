@@ -1,42 +1,63 @@
-
-<nav class="navbar navbar-expand-lg p-3 navbar-light bg-primary ">
-  <a class="navbar-brand text-warning ml-2 mr-5"  routerLink="dashboard"> ProEventos </a>
-  <button class="navbar-toggler btn btn-dark mb-3" (click)="isCollapsed = !isCollapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg p-3 navbar-light bg-primary">
+  <a class="navbar-brand text-warning ml-2 mr-5" routerLink="dashboard">
+    ProEventos
+  </a>
+  <button
+    class="navbar-toggler btn btn-dark mb-3"
+    (click)="isCollapsed = !isCollapsed"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse " [collapse]="isCollapsed" [isAnimated]="false" id="navbarNavAltMarkup">
-    <div class="navbar-nav mr-auto ">
-      <a class="btn btn-outline-warning btn mr-3 " routerLink="eventos/lista"> Eventos <span class="sr-only">(current)</span></a>
-      <a class="btn btn-outline-warning btn mr-3 " routerLink="palestrantes"> Palestrantes </a>
-      <a class="btn btn-outline-warning btn mr-3 " routerLink="contatos"> Contatos </a>
+  <div
+    class="collapse navbar-collapse"
+    [collapse]="isCollapsed"
+    [isAnimated]="false"
+    id="navbarNavAltMarkup"
+  >
+    <div class="navbar-nav mr-auto">
+      <a class="btn btn-outline-warning btn mr-3" routerLink="eventos/lista">
+        Eventos <span class="sr-only">(current)</span></a
+      >
+      <a class="btn btn-outline-warning btn mr-3" routerLink="palestrantes">
+        Palestrantes
+      </a>
+      <a class="btn btn-outline-warning btn mr-3" routerLink="contatos">
+        Contatos
+      </a>
     </div>
 
     <ul class="navbar-nav">
       <li class="nav-item dropdown mr-auto" dropdown>
-        <a dropdownToggle class="btn btn-outline-warning dropdown-toggle mr-5" style="cursor: pointer;" id="navbarDropdownMenuLink" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
+        <a
+          dropdownToggle
+          class="btn btn-outline-warning dropdown-toggle mr-5"
+          style="cursor: pointer"
+          id="navbarDropdownMenuLink"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
           Usuário
         </a>
-        <div *dropdownMenu class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item text-dark" routerLink="perfil">
-            Perfil
-          </a>
+        <div
+          *dropdownMenu
+          class="dropdown-menu bg-light"
+          aria-labelledby="navbarDropdownMenuLink"
+        >
+          <a class="dropdown-item text-dark" routerLink="user/perfil"> Perfil </a>
           <div role="separator" class="divider"></div>
-          <a class="dropdown-item text-dark" href="#">
-            Sair
-          </a>
+          <a class="dropdown-item text-dark" href="#"> Sair </a>
         </div>
       </li>
     </ul>
   </div>
 </nav>
-
-
-
-
-
-
-
 
 <!-- (click)="isCollapsed = !isCollapsed" -->
 
