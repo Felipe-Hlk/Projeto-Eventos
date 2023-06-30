@@ -18,9 +18,6 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { ToastrModule } from 'ngx-toastr';
 import { NgxSpinnerModule } from 'ngx-spinner';
 
-
-
-
 import { EventoService } from './services/evento.service';
 
 import { DateTimeFormatPipe } from './helpers/date-time-format.pipe';
@@ -30,6 +27,9 @@ import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { PerfilComponent } from './Components/perfil/perfil.component';
 import { EventoDetalheComponent } from './Components/eventos/evento-detalhe/evento-detalhe.component';
 import { EventoListaComponent } from './Components/eventos/evento-lista/evento-lista.component';
+import { UserComponent } from './Components/user/user.component';
+import { LoginComponent } from './Components/user/login/login.component';
+import { RegistrationComponent } from './Components/user/registration/registration.component';
 
 
 
@@ -47,6 +47,9 @@ import { EventoListaComponent } from './Components/eventos/evento-lista/evento-l
     PerfilComponent,
     EventoDetalheComponent,
     EventoListaComponent,
+    UserComponent,
+    LoginComponent,
+    RegistrationComponent,
 
   ],
   imports: [
