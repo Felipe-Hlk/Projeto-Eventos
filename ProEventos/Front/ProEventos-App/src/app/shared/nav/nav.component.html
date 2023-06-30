@@ -1,9 +1,9 @@
-<nav class="navbar navbar-expand-lg p-3 navbar-light bg-primary">
+<nav class="navbar navbar-expand-lg p-3 navbar-light bg-primary" *ngIf="showMenu()" >
   <a class="navbar-brand text-warning ml-2 mr-5" routerLink="dashboard">
     ProEventos
   </a>
   <button
-    class="navbar-toggler btn btn-dark mb-3"
+    class="navbar-toggler text-warning btn btn-dark mb-1"
     (click)="isCollapsed = !isCollapsed"
     type="button"
     data-toggle="collapse"
@@ -12,7 +12,7 @@
     aria-expanded="false"
     aria-label="Toggle navigation"
   >
-    <span class="navbar-toggler-icon"></span>
+    <span class="fa-solid fa-bars text-warning p-1"></span>
   </button>
   <div
     class="collapse navbar-collapse"
@@ -52,7 +52,7 @@
         >
           <a class="dropdown-item text-dark" routerLink="user/perfil"> Perfil </a>
           <div role="separator" class="divider"></div>
-          <a class="dropdown-item text-dark" href="#"> Sair </a>
+          <a class="dropdown-item text-dark" routerLink="user/login"> Sair </a>
         </div>
       </li>
     </ul>
