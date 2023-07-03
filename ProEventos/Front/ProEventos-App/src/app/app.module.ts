@@ -1,7 +1,7 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http' // <------------
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -58,6 +58,7 @@ import { RegistrationComponent } from './Components/user/registration/registrati
     HttpClientModule,// importar http cliente para busca do banco de dados pela API
     BrowserAnimationsModule,
     FormsModule,
+    ReactiveFormsModule,
     CommonModule,
     CollapseModule.forRoot(),
     TooltipModule.forRoot(),

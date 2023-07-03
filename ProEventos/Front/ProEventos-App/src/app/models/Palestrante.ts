@@ -1,4 +1,4 @@
-import { Evento } from "./Evento";
+import { Evento } from "./evento";
 import { RedeSocial } from "./Rede-Social";
 
 export interface Palestrante{
