@@ -1,56 +1,99 @@
-<div class="card rounded shadow-sm m-5"  >
-
-
-  <form  [formGroup]="form"> <!-- //[formGroup]="form" -->
+<div class="card rounded shadow-sm m-5">
+  <form [formGroup]="form">
+    <!-- //[formGroup]="form" -->
     <div class="p-3">
       <div class="form-row">
         <div class="form-group col-md-12">
           <label>Tema</label>
-          <input type="text" class="form-control"formControlName="tema" placeholder="Insira o Tema">
+          <input
+            type="text"
+            class="form-control"
+            [ngClass]="{ 'is-invalid': form.get('tema')?.errors && form.get('tema')?.touched }"
+            formControlName="tema"
+            placeholder="Insira o Tema"
+          />
+          <div *ngIf="form.get('tema')?.hasError ('required')" class="invalid-feedback">Tema é obrigatório</div>
+          <div *ngIf="form.get('tema')?.hasError ('minlength')" class="invalid-feedback">deve ter no mínimo 5 caracteres</div>
+          <div *ngIf="form.get('tema')?.hasError ('maxlength')" class="invalid-feedback">deve ter no máximo 50 caracteres</div>
+
+
         </div>
       </div>
       <div class="form-row">
         <div class="form-group col-md-8">
           <label>Local</label>
-          <input type="text" class="form-control"formControlName="local" placeholder="">
+          <input
+            type="text"
+            class="form-control is-invalid"
+            formControlName="local"
+            placeholder=""
+          />
+          <div class="invalid-feedback">Local é obrigatório</div>
         </div>
         <div class="form-group col-md-4">
           <label>Data e Hora</label>
-          <input type="datetime" class="form-control"formControlName="dataEvento" placeholder="">
+          <input
+            type="datetime"
+            class="form-control is-invalid"
+            formControlName="dataEvento"
+            placeholder=""
+          />
+          <div class="invalid-feedback">Data e Hora é obrigatório</div>
         </div>
       </div>
       <div class="form-row">
         <div class="form-group col-md-2">
           <label>Qtd Pessoas</label>
-          <input type="text" class="form-control"formControlName="qtdPessoas" placeholder="">
+          <input
+            type="text"
+            class="form-control is-invalid"
+            formControlName="qtdPessoas"
+            placeholder=""
+          />
+          <div class="invalid-feedback">Qtd de pessoas é obrigatório</div>
         </div>
         <div class="form-group col-md-4">
           <label>Telefone</label>
-          <input type="text" class="form-control"formControlName="telefone" placeholder="(000) 90000-0000">
+          <input
+            type="text"
+            class="form-control is-invalid"
+            formControlName="telefone"
+            placeholder="(000) 90000-0000"
+          />
+          <div class="invalid-feedback">Telefone é obrigatório</div>
         </div>
         <div class="form-group col-md-6">
           <label>Email</label>
-          <input type="text" class="form-control"formControlName="email" placeholder="e-mail">
+          <input
+            type="text"
+            class="form-control is-invalid"
+            formControlName="email"
+            placeholder="e-mail"
+          />
+          <div class="invalid-feedback">Email é obrigatório</div>
         </div>
         <div class="form-group col-md-4">
-          <label>Email</label>
-          <input type="text" class="form-control"formControlName="imagemURL" placeholder="imagem">
+          <label>Imagem</label>
+          <input
+            type="text"
+            class="form-control is-invalid"
+            formControlName="imagemURL"
+            placeholder="imagem"
+          />
+          <div class="invalid-feedback">Imagem é obrigatória</div>
         </div>
       </div>
     </div>
     <div class="card-footer">
-      <div class="d-flex ">
+      <div class="d-flex">
         <button class="btn btn-outline-secondary mr-auto border">
           Cancelar Alteração
         </button>
         <button class="btn btn-success ml-2">
-          <span class="spinner-border spinner-border-sm "></span>
+          <span class="spinner-border spinner-border-sm"></span>
           Salvar Evento
         </button>
       </div>
     </div>
   </form>
-
-
-
 </div>

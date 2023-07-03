@@ -13,31 +13,18 @@ export class EventoDetalheComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.validation();
   }
 
   public validation(): void {
-
     this.form = new FormGroup({
-
-      tema: new FormControl('',
-      [Validators.required, Validators.minLength(5), Validators.maxLength(50)]),
-
+      tema: new FormControl('', [Validators.required, Validators.minLength(5), Validators.maxLength(50)]),
       local: new FormControl('', Validators.required),
-
-      dataEvento: new FormControl('', Validators.required,),
-
-      qtdPessoas: new FormControl('',
-      [Validators.required, Validators.max(500000) ]),
-
+      dataEvento: new FormControl('', Validators.required),
+      qtdPessoas: new FormControl('', [Validators.required, Validators.max(500000)]),
       telefone: new FormControl('', Validators.required),
-
-      email: new FormControl('',
-      [Validators.required, Validators.email ]),
-
+      email: new FormControl('', [Validators.required, Validators.email]),
       imagemURL: new FormControl('', Validators.required)
-
     });
-
   }
-
 }
