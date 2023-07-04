@@ -1118,11 +1118,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\proeventos.domain\\ProEventos.Domain.csproj",
+      "projectUniqueName": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\Projeto-Eventos\\ProEventos\\back\\src\\proeventos.domain\\ProEventos.Domain.csproj",
       "projectName": "ProEventos.Domain",
-      "projectPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\proeventos.domain\\ProEventos.Domain.csproj",
+      "projectPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\Projeto-Eventos\\ProEventos\\back\\src\\proeventos.domain\\ProEventos.Domain.csproj",
       "packagesPath": "C:\\Users\\FELIPE\\.nuget\\packages\\",
-      "outputPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\CursoFullStackWeb\\ProEventos\\back\\src\\proeventos.domain\\obj\\",
+      "outputPath": "D:\\Felipe\\PROGRAMAÇÃO\\Repository GItHub\\Projeto-Eventos\\ProEventos\\back\\src\\proeventos.domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\FELIPE\\AppData\\Roaming\\NuGet\\NuGet.Config"
